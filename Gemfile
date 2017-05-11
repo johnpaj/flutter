@@ -1,10 +1,11 @@
 source 'https://rubygems.org'
 
-
+# We will be using the devise Gem for authentication of user accounts
+gem 'devise'
 # For Twitter UI Component Inc Navbar
 gem 'bootstrap-sass', '~> 3.3.6'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+# Bundle edge Rails instead: gembun 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
