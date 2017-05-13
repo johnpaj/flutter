@@ -4,6 +4,12 @@
   <%= devise_error_messages! %>
 
   <div class="field">
+    <%= f.label :username %><br />
+    <!-- this is the field that is initially highlighted when user enters the page and tries to fill up the form -->
+    <%= f.text_field :username, autofocus: true %>
+  </div>
+  
+  <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
   </div>

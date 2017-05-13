@@ -962,3 +962,438 @@ Processing by Devise::SessionsController#new as HTML
   Rendered layouts/_nav_guest.html.erb (0.8ms)
   Rendered layouts/_nav.html.erb (1.8ms)
 Completed 200 OK in 217ms (Views: 197.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 49.151.137.67 at 2017-05-11 15:12:31 +0000
+Cannot render console from 49.151.137.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_nav_guest.html.erb (1.9ms)
+  Rendered layouts/_nav.html.erb (8.6ms)
+Completed 200 OK in 664ms (Views: 654.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 49.151.137.67 at 2017-05-11 15:12:39 +0000
+Cannot render console from 49.151.137.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (76.6ms)
+  Rendered layouts/_nav_guest.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 200ms (Views: 153.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for 49.151.137.67 at 2017-05-11 15:12:42 +0000
+Cannot render console from 49.151.137.67! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_nav_guest.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 70ms (Views: 68.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserNameToUsers (20170513070636)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserNameToUsers (20170513070636)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserNameToUsers (20170513070636)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserNameToUsers (20170513070636)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserNameToUsers (20170513070636)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mALTER TABLE "users" ADD "username" varchar[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (5.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_username" ON "users" ("username")[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170513070636"]]
+  [1m[36m (16.5ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_username' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_username' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:03:59 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting ')'
+..._up) { |u| u.permit (:username, :email, :password, :password...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+... (:username, :email, :password, :password_confirmation, :rem...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting ')'
+..._in) { |u| u.permit (:username, :email, :password, :password...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+... (:username, :email, :password, :password_confirmation, :rem...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting ')'
+...update) { |u| u.permit (:email, :password, :password_confirm...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ssword, :password_confirmation, :remember_me) }
+...                               ^):
+  app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting ')'
+  app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting ')'
+  app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting ')'
+  app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (24.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.0ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:05:42 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+SyntaxError (/home/ubuntu/workspace/app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting ')'
+..._up) { |u| u.permit (:username, :email, :password, :password...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+... (:username, :email, :password, :password_confirmation, :rem...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting ')'
+...ign_in) { |u| u.permit (:login, :email, :password, :password...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...mit (:login, :email, :password, :password_confirmation, :rem...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting ')'
+...update) { |u| u.permit (:email, :password, :password_confirm...
+...                               ^
+/home/ubuntu/workspace/app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+...ssword, :password_confirmation, :remember_me) }
+...                               ^):
+  app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting ')'
+  app/controllers/application_controller.rb:14: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting ')'
+  app/controllers/application_controller.rb:15: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting ')'
+  app/controllers/application_controller.rb:17: syntax error, unexpected ',', expecting &. or :: or '[' or '.'
+  app/controllers/pages_controller.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (37.7ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:06:33 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.4ms)
+  Rendered layouts/_nav_guest.html.erb (2.4ms)
+  Rendered layouts/_nav.html.erb (9.3ms)
+Completed 200 OK in 660ms (Views: 652.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 124.104.123.75 at 2017-05-13 08:06:39 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x007f4f812ee3e8>
+Did you mean?  fork):
+  app/controllers/application_controller.rb:14:in `configure_permitted_parameters'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.2ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:10:14 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+  Rendered layouts/_nav_guest.html.erb (1.4ms)
+  Rendered layouts/_nav.html.erb (7.9ms)
+Completed 200 OK in 698ms (Views: 675.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 124.104.123.75 at 2017-05-13 08:10:19 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `for' for #<Devise::ParameterSanitizer:0x007f80ad285160>
+Did you mean?  fork):
+  app/controllers/application_controller.rb:14:in `configure_permitted_parameters'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.0ms)
+
+
+Started GET "/" for 66.102.6.154 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (2.1ms)
+Completed 200 OK in 252ms (Views: 251.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 66.102.6.155 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 66.102.6.154 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 66.102.6.134 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-7862a8a8b42407b4741a1adeeea35f0d13ddc4f702ec532adb0674491d296495.js?body=1" for 66.102.6.158 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.158! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" for 66.102.6.142 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.142! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 66.102.6.154 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 66.102.6.128 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 66.102.6.155 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 66.102.6.154 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.154! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 66.102.6.153 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.153! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 66.102.6.134 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 66.102.6.153 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.153! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 66.102.6.155 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 66.102.6.128 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 66.102.6.132 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 66.102.6.155 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 66.102.6.134 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.134! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 66.102.6.155 at 2017-05-13 08:12:13 +0000
+Cannot render console from 66.102.6.155! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-fa27557140de5623b316923ce9bd2ab77fec9fcf3fb16670f31de9323fa8f870.css?body=1" for 66.102.6.140 at 2017-05-13 08:12:14 +0000
+Cannot render console from 66.102.6.140! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 124.104.123.75 at 2017-05-13 08:13:24 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (124.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 223ms (Views: 196.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users/sign_up" for 124.104.123.75 at 2017-05-13 08:13:35 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.4ms)
+Completed 200 OK in 75ms (Views: 69.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:16:40 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_nav_guest.html.erb (1.4ms)
+  Rendered layouts/_nav.html.erb (6.8ms)
+Completed 200 OK in 682ms (Views: 659.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 124.104.123.75 at 2017-05-13 08:16:44 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (84.1ms)
+  Rendered layouts/_nav_guest.html.erb (0.3ms)
+  Rendered layouts/_nav.html.erb (1.7ms)
+Completed 200 OK in 217ms (Views: 167.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up" for 124.104.123.75 at 2017-05-13 08:20:02 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (3.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.3ms)
+  Rendered layouts/_nav_guest.html.erb (0.2ms)
+  Rendered layouts/_nav.html.erb (1.2ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 124.104.123.75 at 2017-05-13 08:20:17 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xkGaVj7CPw02sFNjVNZMQ7FAkktBVel//59dklAminqtBzEegNMStWb7JMSuVnQkmSj5LA/yYLI/SuFdtANI4g==", "user"=>{"username"=>"johnpaj2", "email"=>"jj@jj.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jj@jj.com' LIMIT 1[0m
+  [1m[35mSQL (4.1ms)[0m  INSERT INTO "users" ("username", "email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["username", "johnpaj2"], ["email", "jj@jj.com"], ["encrypted_password", "$2a$11$47WOL50xeVbJosx/K30SvuR2hd4.5GypsPomouqEYGoXrMDuTSQDi"], ["created_at", "2017-05-13 08:20:17.745604"], ["updated_at", "2017-05-13 08:20:17.745604"]]
+  [1m[36m (14.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-05-13 08:20:17.774274"], ["current_sign_in_at", "2017-05-13 08:20:17.774274"], ["last_sign_in_ip", "124.104.123.75"], ["current_sign_in_ip", "124.104.123.75"], ["sign_in_count", 1], ["updated_at", "2017-05-13 08:20:17.775409"], ["id", 2]]
+  [1m[35m (35.4ms)[0m  commit transaction
+Redirected to https://flutter-johnpaj.c9users.io/
+Completed 302 Found in 377ms (ActiveRecord: 55.0ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:20:17 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_nav_user.html.erb (1.4ms)
+  Rendered layouts/_nav.html.erb (6.7ms)
+Completed 200 OK in 85ms (Views: 83.5ms | ActiveRecord: 0.5ms)
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:23:07 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_nav_user.html.erb (1.3ms)
+  Rendered layouts/_nav.html.erb (4.6ms)
+Completed 200 OK in 96ms (Views: 94.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:25:10 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered layouts/_nav_user.html.erb (0.5ms)
+  Rendered layouts/_nav.html.erb (20.5ms)
+Completed 200 OK in 161ms (Views: 149.5ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/user/joeman" for 124.104.123.75 at 2017-05-13 08:28:31 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"joeman"}
+  Rendered pages/profile.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_nav_user.html.erb (0.6ms)
+  Rendered layouts/_nav.html.erb (18.4ms)
+Completed 200 OK in 99ms (Views: 91.2ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/user/joeman" for 124.104.123.75 at 2017-05-13 08:30:45 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"joeman"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "joeman"]]
+Redirected to https://flutter-johnpaj.c9users.io/
+Completed 302 Found in 18ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 124.104.123.75 at 2017-05-13 08:30:46 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#index as HTML
+  Rendered pages/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_nav_user.html.erb (0.7ms)
+  Rendered layouts/_nav.html.erb (19.6ms)
+Completed 200 OK in 137ms (Views: 135.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/user/johnpaj2" for 124.104.123.75 at 2017-05-13 08:30:55 +0000
+Cannot render console from 124.104.123.75! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#profile as HTML
+  Parameters: {"id"=>"johnpaj2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."username" = ? LIMIT 1[0m  [["username", "johnpaj2"]]
+  Rendered pages/profile.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  Rendered layouts/_nav_user.html.erb (0.8ms)
+  Rendered layouts/_nav.html.erb (5.0ms)
+Completed 200 OK in 109ms (Views: 106.4ms | ActiveRecord: 0.7ms)
