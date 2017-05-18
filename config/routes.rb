@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :posts
+
   root 'pages#index'
-  
+
   #Define Routes to pages
   get '/home' => 'pages#home'
   get '/user/:id' => 'pages#profile'
