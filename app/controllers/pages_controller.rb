@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   # back end code for pages/home
   def home
     @posts = Post.all
+    @newPost = Post.new
   end
   # this is the page that corresponds to ALL the pages.
   # back end code for pages/profile
